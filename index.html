@@ -9,8 +9,20 @@
   <link rel="stylesheet" href="./css/main.min.css" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
+    body {
+      background-color: antiquewhite;
+    }
+
     header {
       padding: 15px;
+      position: fixed;
+      width: 100%;
+
+
+    }
+
+    h1 {
+      margin-left: 20px;
     }
 
     .switch {
@@ -57,27 +69,29 @@
     }
 
     /* ------------------------------- */
-    .button {
+    #button {
       border: 2px solid #0000ff;
+
     }
 
-    .inputs {
+    #inpus {
       border: 2px solid #ff0000;
     }
 
 
-    .Background {
+    #background {
       border: 2px solid #ffa500;
     }
 
-    .card {
+    #inputs-2 {
       border: 2px solid #f5e906;
     }
 
-    .radius {
+    #radius {
       border: 2px solid #06f602c9;
     }
-    .table{
+
+    #table {
       border: 2px solid #f6a502c9;
     }
   </style>
@@ -93,8 +107,8 @@
 
       <nav class="flex justify-between item-center">
 
-        <a class="text-white" style="font-size: 30px;  background-color: gold; border-radius: 20px;" href=""><img
-            src="./assets/logo/BookMyShow Logo (1).svg" alt=""></a>
+        <a class="text-white" style="font-size: 30px;  background-color: gold; border-radius: 20px; margin-left: 55px;"
+          href=""><img src="./assets/logo/BookMyShow Logo (1).svg" alt=""></a>
 
 
 
@@ -121,27 +135,28 @@
   </header>
 
   <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none; width: 400px;" id="mySidebar">
+  <div class="w3-sidebar w3-bar-block w3-border-right"
+    style="display:none; width: 400px; background-color: antiquewhite;" id="mySidebar">
     <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <a href="button" class="w3-bar-item w3-button">Buttons</a>
-    <a href="#" class="w3-bar-item w3-button">Inputs</a>
-    <a href="#" class="w3-bar-item w3-button">Background Colors</a>
-    <a href="#" class="w3-bar-item w3-button">Background Colors</a>
-    <a href="#" class="w3-bar-item w3-button">round classes</a>
-    <a href="#" class="w3-bar-item w3-button">list name card</a>
-    <a href="#" class="w3-bar-item w3-button">page </a>
-    <a href="#" class="w3-bar-item w3-button">page </a>
-    <a href="#" class="w3-bar-item w3-button">page </a>
-    <a href="#" class="w3-bar-item w3-button">page </a>
-    <a href="#" class="w3-bar-item w3-button">page </a>
-    <a href="#" class="w3-bar-item w3-button">page </a>
+    <a href="#button" class="w3-bar-item w3-button">Buttons</a>
+    <a href="#inputs" class="w3-bar-item w3-button">Inputs</a>
+    <a href="#background " class="w3-bar-item w3-button">Background Colors</a>
+    <a href="#input-2" class="w3-bar-item w3-button">Background Colors</a>
+    <a href="#radius" class="w3-bar-item w3-button">round classes</a>
+    <a href="#table" class="w3-bar-item w3-button">list name card</a>
+    <a href="#dropdown" class="w3-bar-item w3-button">Dropdown </a>
+    <a href="#box shadow" class="w3-bar-item w3-button">font size </a>
+    <a href="#font size" class="w3-bar-item w3-button">box shadow</a>
+    <a href="#Alert" class="w3-bar-item w3-button">Alert </a>
+    <a href="#card" class="w3-bar-item w3-button">card </a>
+    <a href="#image" class="w3-bar-item w3-button">image </a>
   </div>
 
   <!-- Page Content -->
-  <div class="w3-teal" style="display: flex;">
-    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-teal" style="display: flex; position: fixed;">
+    <button class="w3-button w3-teal w3-xlarge " style="position: fixed;  " onclick="w3_open()">☰</button>
     <div class="w3-container">
-      <h1>My Page Aripov Bekmuhammad 🤙 </h1>
+      <h1> .. Bekmuhammad 🤙 </h1>
     </div>
   </div>
 
@@ -160,7 +175,7 @@
 
   <div class="container p">
 
-    <section class="button">
+    <section id="button" style="border: 5px solid #dc143c;">
 
       <h1>Buttons</h1>
       <button class="btn outlined">Outlined</button>
@@ -194,7 +209,7 @@
       </div>
     </section>
 
-    <section class="inputs">
+    <section id="inputs" style="border: 5px solid #ffa500;">
 
       <h1>Inputs</h1>
 
@@ -229,7 +244,7 @@
 
     </section>
 
-    <section class="Background ">
+    <section id="background " style="border: 5px solid #8a2be2;">
       <div class="w3-container">
         <h1>Background Colors</h1>
       </div>
@@ -270,15 +285,15 @@
       <div class="wrapper bg-dark text-white rounded-4 my-8">
         <pre>
         <code>
-          &lt;color red: London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants. /&gt;
+          &lt;color red: London is the most populous city in the United Kingdom, with a metropolitan area of over  /&gt;
   
-          &lt; color teal: London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants. /&gt;
+          &lt; color teal: London is the most populous city in the United Kingdom, with a metropolitan area of over  /&gt;
   
-          &lt;color yellow: London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants. /&gt;
+          &lt;color yellow: London is the most populous city in the United Kingdom, with a metropolitan area of over  /&gt;
   
-          &lt;color gray: London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants. /&gt;
+          &lt;color gray: London is the most populous city in the United Kingdom, with a metropolitan area of over  /&gt;
   
-          &lt;color blue: London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants. /&gt;
+          &lt;color blue: London is the most populous city in the United Kingdom, with a metropolitan area of over  /&gt;
           
       
         </code>
@@ -286,22 +301,32 @@
       </div>
     </section>
 
-    <section class="card">
+    <section id="input-2" style="border: 5px solid #a52a2a;">
       <div class="w3-container">
-        <h2>Photo Card</h2>
+        <h3>Using CSS to style an HTML Form</h3>
 
-        <div class="w3-card-4" style="width:50%">
-          <img src="https://picsum.photos/id/111/300/300" alt="Alps" style="width:100%">
-          <div class="w3-container w3-center">
-            <p>The Italian / Austrian Alps</p>
-          </div>
+        <div>
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <input type="submit" value="Submit">
+          </form>
         </div>
-      </div>
 
 
-
-      <div class="wrapper bg-dark text-white rounded-4 my-8">
-        <pre>
+        <div class="wrapper bg-dark text-white rounded-4 my-8">
+          <pre>
           <code>
             &lt;div class="w3-card-4" style="width:50%" /&gt;
     
@@ -316,11 +341,11 @@
         
           </code>
         </pre>
-      </div>
+        </div>
 
     </section>
 
-    <section class="radius">
+    <section id="radius" style="border: 5px solid #0000ff;">
       <div class="w3-container">
         <h2>Round Classes</h2>
 
@@ -397,29 +422,29 @@
       </div>
     </section>
 
-    <section class="table">
+    <section id="table" style="border: 5px solid #ff0000;">
       <div class="w3-container bg-">
-      <h2>List as a Card</h2>
-      <p>The w3-card class makes the list look like a card:</p>
+        <h2>List as a Card</h2>
+        <p>The w3-card class makes the list look like a card:</p>
 
-      <ul class="w3-ul w3-card" style="width:50%">
-        <li>Jill</li>
-        <li>Eve</li>
-        <li>Adam</li>
-      </ul>
-      <br>
+        <ul class="w3-ul w3-card" style="width:50%">
+          <li>Jill</li>
+          <li>Eve</li>
+          <li>Adam</li>
+        </ul>
+        <br>
 
-      <p>More shadows:</p>
-      <ul class="w3-ul w3-card-4" style="width:50%">
-        <li>Jill</li>
-        <li>Eve</li>
-        <li>Adam</li>
-      </ul>
-    </div>
+        <p>More shadows:</p>
+        <ul class="w3-ul w3-card-4" style="width:50%">
+          <li>Jill</li>
+          <li>Eve</li>
+          <li>Adam</li>
+        </ul>
+      </div>
 
 
-    <div class="wrapper bg-dark text-white rounded-4 my-8">
-      <pre>
+      <div class="wrapper bg-dark text-white rounded-4 my-8">
+        <pre>
         <code>
           &lt;div class="w3-container bg-" 
   
@@ -447,22 +472,72 @@
           &lt;li  adam   li /&gt;
 
           ul/&gt;
+                                           /&gt;
 
-  
-        
-
-
-                                                                          /&gt;
-  
-         
-          
       
         </code>
       </pre>
-    </div>
+      </div>
 
 
-</section>
+    </section>
+
+    <section id="dropdown" style="border: 5px solid chocolate;">
+      <div class="container">
+        <h2>Dropdowns</h2>
+        <p>The .dropdown class is used to indicate a dropdown menu. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Possimus rerum temporibus accusantium perferendis dignissimos voluptates! Exercitationem nulla
+          voluptatem qui voluptas modi rem magnam doloremque in illo sequi! Eligendi, praesentium nam?</p>
+        <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+      <div class="wrapper bg-dark text-white rounded-4 my-8">
+        <pre>
+        <code>
+          &lt;div class="w3-container bg-" 
+  
+          &lt;ul class="dropdown-menu" role="menu" aria-labelledby="menu1" /&gt;
+  
+          &lt;li role="presentation"a role="menuitem" tabindex="-1" href="#" /&gt;
+  
+          &lt;ul class="w3-ul w3-card" style="width:50%" 
+
+          &lt;li  Jill  li /&gt;
+  
+          &lt; li  eve li /&gt;
+
+          &lt;li  adam   li /&gt;
+
+          ul/&gt;
+
+          
+          &lt;ul class="w3-ul w3-card" style="width:50%" 
+
+          &lt;li  Jill  li /&gt;
+  
+          &lt; li  eve li /&gt;
+
+          &lt;li  adam   li /&gt;
+
+          ul/&gt;
+                                           /&gt;
+
+
+    </section>
 
 
 
